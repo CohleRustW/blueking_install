@@ -14,12 +14,12 @@ from blueapps.core.celery import celery_app
 # SaaS运行版本，如非必要请勿修改
 RUN_VER = 'open'
 # SaaS应用ID
-APP_CODE = ''
+APP_CODE = 'blueking'
 # SaaS安全密钥，注意请勿泄露该密钥
-SECRET_KEY = ''
+SECRET_KEY = '1a2814d6-de17-4826-b056-a00e05460fbf'
 # 蓝鲸SaaS平台URL，例如 http://paas.bking.com
-BK_URL = None
-
+#yBK_URL = 'http://paas-xc.ee24.bktencent.com'
+BK_URL = 'http://paas-xc.ee24.bktencent.com'
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(
     __file__)))

@@ -20,6 +20,7 @@ STATIC_URL = '/static/'
 BROKER_URL = 'redis://localhost:6379/0'
 
 DEBUG = True
+APP_CODE = 'blueking'
 
 # 本地开发数据库设置
 # USE FOLLOWING SQL TO CREATE THE DATABASE NAMED APP_CODE
@@ -30,7 +31,7 @@ DATABASES = {
         'NAME': APP_CODE,
         'USER': 'wang',
         'PASSWORD': 'root123',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     },
 }

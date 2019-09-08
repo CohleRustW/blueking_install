@@ -20,6 +20,9 @@ from blueapps.conf.default_settings import *  # noqa
 # )
 
 # 请在这里加入你的自定义 APP
+APP_IP = 'blueking'
+APP_TOKEN = '1a2814d6-de17-4826-b056-a00e05460fbf'
+
 INSTALLED_APPS += (
     'home_application',
     'mako_application',
@@ -70,7 +73,7 @@ STATICFILES_DIRS = [
 
 # CELERY 开关，使用时请改为 True，修改项目目录下的 Procfile 文件，添加以下两行命令：
 # worker: python manage.py celery worker -l info
-# beat: python manage.py celery beat -l info
+# beat: python manage.py celery bgeat -l info
 # 不使用时，请修改为 False，并删除项目目录下的 Procfile 文件中 celery 配置
 IS_USE_CELERY = False
 
